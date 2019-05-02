@@ -182,6 +182,9 @@ class Wp_Ajabiz {
 	 */
 	public function run() {
 		$this->loader->run();
+		
+		$plugin_public = new Wp_Ajabiz_Public( $this->get_plugin_name(), $this->get_version() );
+		add_shortcode('ajabiz_opt_in', array($plugin_public,'ajabiz_opt_in'));	
 	}
 
 	/**
