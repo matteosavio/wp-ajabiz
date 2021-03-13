@@ -123,7 +123,8 @@ class Wp_Ajabiz_Public {
                             </p>
                             <p class="et_pb_contact_field et_pb_contact_field_0 et_pb_contact_field_last">
                                 <input value="" name="email" id="ajabiz-subscribe-email" autocomplete="off" placeholder="E-Mail*" type="email" required="" class="input">
-                            </p>                        
+                            </p>
+                            <input type="checkbox" name="contact-yrWNM7" value="1" style="display:none !important" tabindex="-1" autocomplete="off">
                             <div class="et_contact_bottom_container">
                                 <input value="Eintragen" name="subscribe" class="et_pb_contact_submit et_pb_button" type="submit">
                             </div>
@@ -145,6 +146,7 @@ class Wp_Ajabiz_Public {
                                 <div class="full">
                                     <input value="" name="email" id="ajabiz-subscribe-email" autocomplete="off" placeholder="E-Mail*" type="email" required="">
                                 </div>
+                                <input type="checkbox" name="contact-yrWNM7" value="1" style="display:none !important" tabindex="-1" autocomplete="off">
                                 <div class="full">
                                     <input value="Eintragen" name="subscribe" type="submit">
                                 </div>
