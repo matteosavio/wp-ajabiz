@@ -110,49 +110,26 @@ class Wp_Ajabiz_Public {
         	$theme = wp_get_theme();
         	
         	
-    		if(($theme->parent()&&($theme->parent()->get('Name') == 'Divi'))||($theme->get('Name') == 'Divi')) {
-            	return'
-                    <div class="et_pb_contact" id="ajabiz-optin-1">
-                        <form class="et_pb_contact_form clearfix" action="https://app.ajabiz.com/form/addContact/' . $attributes['form'] . '">
-                            <p class="et_pb_contact_field et_pb_contact_field_half">
-                                <input value="" name="firstName" id="ajabiz-subscribe-firstname" autocomplete="off" placeholder="Vorname*" class="input" type="text">
-                            </p>
-                            
-                            <p class="et_pb_contact_field et_pb_contact_field_half et_pb_contact_field_last">
-                                <input value="" name="lastName" id="ajabiz-subscribe-lastname" autocomplete="off" placeholder="Nachname*" type="text" class="input">
-                            </p>
-                            <p class="et_pb_contact_field et_pb_contact_field_0 et_pb_contact_field_last">
-                                <input value="" name="email" id="ajabiz-subscribe-email" autocomplete="off" placeholder="E-Mail*" type="email" required="" class="input">
-                            </p>                        
-                            <div class="et_contact_bottom_container">
-                                <input value="Eintragen" name="subscribe" class="et_pb_contact_submit et_pb_button" type="submit">
+            return'
+                <div class="ajabiz-optin" id="ajabiz-optin-1">
+                    <form action="https://app.ajabiz.com/form/addContact/' . $attributes['form'] . '">
+                        <div class="ajabiz-formgrid">
+                            <div class="half">
+                                <input value="" name="firstName" id="ajabiz-subscribe-firstname" autocomplete="off" placeholder="Vorname*" type="text">
                             </div>
-                        </form>
-                    </div>
-                    ';
-        	}
-        	else {
-                return'
-                    <div class="ajabiz-optin" id="ajabiz-optin-1">
-                        <form action="https://app.ajabiz.com/form/addContact/' . $attributes['form'] . '">
-                            <div class="ajabiz-formgrid">
-                                <div class="half">
-                                    <input value="" name="firstName" id="ajabiz-subscribe-firstname" autocomplete="off" placeholder="Vorname*" type="text">
-                                </div>
-                                <div class="half">
-                                    <input value="" name="lastName" id="ajabiz-subscribe-lastname" autocomplete="off" placeholder="Nachname*" type="text">
-                                </div>
-                                <div class="full">
-                                    <input value="" name="email" id="ajabiz-subscribe-email" autocomplete="off" placeholder="E-Mail*" type="email" required="">
-                                </div>
-                                <div class="full">
-                                    <input value="Eintragen" name="subscribe" type="submit">
-                                </div>
+                            <div class="half">
+                                <input value="" name="lastName" id="ajabiz-subscribe-lastname" autocomplete="off" placeholder="Nachname*" type="text">
                             </div>
-                        </form>
-                    </div>
-                    ';
-        	}
+                            <div class="full">
+                                <input value="" name="email" id="ajabiz-subscribe-email" autocomplete="off" placeholder="E-Mail*" type="email" required="">
+                            </div>
+                            <div class="full">
+                                <input value="Eintragen" name="subscribe" type="submit">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                ';
     	}
     	
     	return '(No contact form hash)';

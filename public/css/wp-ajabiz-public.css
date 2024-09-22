@@ -2,3 +2,34 @@
  * All of the CSS for your public-facing functionality should be
  * included in this file.
  */
+ 
+ 
+ .ajabiz-formgrid {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     width: 100%;
+     max-width: 600px;
+     gap: 5px 5px;
+     margin: 0 auto;
+     font-size: 1.2rem;
+ }
+ 
+ .ajabiz-formgrid .half {
+     
+ }
+ 
+ .ajabiz-formgrid .full {
+     grid-column: 1 / -1;
+ }
+ 
+ .ajabiz-formgrid input {
+     background-color: #f0f0f0 !important;
+     border: none !important;
+     padding: 10px !important;
+     width: 100%;
+ }
+ 
+ .ajabiz-formgrid input[type="submit"] {
+     background-color: #666666 !important;
+     color: white;
+ }
